@@ -21,18 +21,6 @@
   flex-direction: column;
 }
 
-.inputWrapRemoved {
-  width: 35vw;
-  margin: 20px;
-  background-color: #70526f;
-  box-shadow: rgba(213, 168, 237, 0.574) 0px 5px 20px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: -290px;
-}
-
 .outputWrap {
   width: 55vw;
   margin: 20px;
@@ -43,24 +31,12 @@
   flex-direction: column;
 }
 
-.outputWrapRemoved {
-  width: 55vw;
-  margin: 20px;
-  background-color: #70526f;
-  box-shadow: rgba(213, 168, 237, 0.574) 0px 5px 20px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 800px;
-}
-
 .box-header {
   height: 40px;
   width: 94%;
   border: solid black 1px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   background-color: #310a31;
   color: white;
   display: flex;
@@ -135,4 +111,76 @@ textarea::placeholder {
   padding-right: 3%;
   padding-top: 2%;
   word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.hidden {
+  display: none;
+}
+
+#preview blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+  margin: 20px 0;
+}
+#preview > p > code {
+  padding: 3px;
+  margin: 20px 0;
+}
+#preview code {
+  background: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+#preview pre {
+  display: block;
+  overflow: auto;
+  background: white;
+  padding: 5px;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+#preview h1 {
+  border-bottom: 2px solid #224b4b;
+  margin: 20px 0;
+}
+#preview h2 {
+  border-bottom: 1px solid #224b4b;
+  margin: 20px 0;
+}
+#preview table {
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+#preview td,
+#preview th {
+  border: 2px solid #224b4b;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 20px 0;
+}
+#preview img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space-collapse: preserve;
+  text-wrap: nowrap;
+  margin: 1em 0px;
 }
