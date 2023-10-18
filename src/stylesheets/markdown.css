@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputWrap {
+  width: 35vw;
+  margin: 20px;
+  background-color: #70526f;
+  box-shadow: rgba(213, 168, 237, 0.574) 0px 5px 20px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWrapRemoved {
+  width: 35vw;
+  margin: 20px;
+  background-color: #70526f;
+  box-shadow: rgba(213, 168, 237, 0.574) 0px 5px 20px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -290px;
+}
+
+.outputWrap {
+  width: 55vw;
+  margin: 20px;
+  background-color: #70526f;
+  box-shadow: rgba(213, 168, 237, 0.574) 0px 5px 20px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.outputWrapRemoved {
+  width: 55vw;
+  margin: 20px;
+  background-color: #70526f;
+  box-shadow: rgba(213, 168, 237, 0.574) 0px 5px 20px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 800px;
+}
+
+.box-header {
+  height: 40px;
+  width: 94%;
+  border: solid black 1px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #310a31;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Russo One, sans-serif;
+  font-size: 25px;
+  padding: 0 3%;
+}
+
+.header-title {
+  width: 100%;
+  padding: 0 5px;
+}
+
+.iconFFC {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+}
+
+.iconExpand {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+}
+
+.marker-input {
+  width: 94%;
+  max-width: 94%;
+  min-width: 94%;
+  min-height: 200px;
+  background-color: #847996;
+  color: black;
+  font-size: 15px;
+  display: inline-block;
+  border: solid black 1px;
+  border-top: none;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+}
+
+.input-extend {
+  height: 85vh;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+textarea::placeholder {
+  color: black;
+  opacity: 0.5;
+}
+
+.marker-result {
+  width: 94%;
+  max-width: 94%;
+  min-width: 94%;
+  min-height: 300px;
+  background-color: #847996;
+  color: black;
+  font-size: 20px;
+  border: solid black 1px;
+  display: inline-block;
+  border-top: none;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  word-wrap: break-word;
+}
