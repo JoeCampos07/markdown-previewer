@@ -55,9 +55,6 @@ function Markdown() {
   ![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
   `
 
-
-
-
   const [textHTML, setTextHTML] = useState(defaultMarkdown)
   
   const getMarkdown = (FORM_INPUT) => {
